@@ -23,6 +23,10 @@ module NfePaulistana
       ]
     end
 
+    def number
+      retorno[:chave_n_fe_rps][:chave_n_fe][:numero_n_fe]
+    end
+
     def success?
       !!retorno[:cabecalho][:sucesso]
     end
