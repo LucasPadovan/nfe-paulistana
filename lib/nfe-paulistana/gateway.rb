@@ -81,7 +81,6 @@ module NfePaulistana
 
     def client
       Savon.client(
-        soap_version: 2,
         env_namespace: :soap,
         ssl_verify_mode: :peer,
         ssl_cert_file: @options[:ssl_cert_path],
